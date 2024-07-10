@@ -1,0 +1,50 @@
+.addInfo {
+    border: 1px solid #000;
+    height: 75vh;
+    position: relative;
+    width: 92%;
+    margin: 50px auto;
+}
+.page-title {
+    align-items: center;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    display: flex;
+    font-weight: bolder;
+    height: 3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 20%;
+}
+table {
+    margin: 0 3%;
+    width: 94%;
+}
+thead {
+    background-color: #4472c4;
+    color: #fff;
+}
+tr{
+    height: 35px;
+}
+.addBtn {
+    background-color: #4472c4;
+    border: none;
+    border-radius: 2px;
+    bottom: 1%;
+    color: #fff;
+    height: 8%;
+    position: absolute;
+    right: 1%;
+    width: 10%;
+}
+td{
+    border: 1px solid gray;
+}
+tbody tr td{
+    text-align: center;
+}
+tbody tr td button{
+    background-color: transparent;
+    border: none;
+}

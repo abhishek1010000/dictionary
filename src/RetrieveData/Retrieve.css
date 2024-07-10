@@ -1,0 +1,51 @@
+.retrieve {
+    border: 1px solid #000;
+    height: 75vh;
+    width: 92%;
+    margin: 50px auto;
+}
+.page-title {
+    align-items: center;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    display: flex;
+    font-weight: bolder;
+    height: 3rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 20%;
+}
+.find {
+    height: 8%;
+    width: 50%;
+}
+.find-form {
+    display: flex;
+    height: 100%;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3%;
+    width: 94%;
+}
+.search-aadhar {
+    margin-right: 2%;
+    text-align: center;
+}
+form>input {
+    width: 100%;
+}
+.find-btn {
+    background-color: #4472c4;
+    border: none;
+    color: #fff;
+    width: 20%;
+}
+.result {
+    margin: 2% 3% 0;
+    width: 92%;
+}
+.result h1{
+    text-align: center;
+}
