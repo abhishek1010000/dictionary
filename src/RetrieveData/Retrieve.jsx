@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { PeopleContext } from '../PeopleContext'
+import { PeopleContext } from '../PeopleContext';
 import './Retrieve.css';
 
 const Retrieve = () => {
@@ -24,7 +24,7 @@ const Retrieve = () => {
       </div>
       <div className="find">
         <form className="find-form" onSubmit={handleSubmit}>
-          <input type="text" className="search-aadhar" value={aadhar} onChange={handleChange} />
+          <input type="number" className="search-aadhar" value={aadhar} onChange={handleChange} />
           <input type="submit" value="Find" className="find-btn" />
         </form>
       </div>

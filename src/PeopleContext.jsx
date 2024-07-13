@@ -1,16 +1,23 @@
-import React, { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 export const PeopleContext = createContext();
 
 export const PeopleProvider = ({ children }) => {
-  const [people, setPeople] = useState([]);
+  const [people, setPeople] = useState(() => {
+    const storedPeople = localStorage.getItem('people');
+    return storedPeople ? JSON.parse(storedPeople) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('people', JSON.stringify(people));
+  }, [people]);
 
   const addPerson = (person) => {
-    setPeople([...people, person]);
+    setPeople((prevPeople) => [...prevPeople, person]);
   };
 
   const deletePerson = (index) => {
-    setPeople(people.filter((_, i) => i !== index));
+    setPeople((prevPeople) => prevPeople.filter((_, i) => i !== index));
   };
 
   return (

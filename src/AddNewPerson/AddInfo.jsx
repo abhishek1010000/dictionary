@@ -20,6 +20,7 @@ const AddInfo = () => {
       ...prevState,
       [name]: value
     }));
+    localStorage.setItem('people', JSON.stringify(people));
   };
 
   const handleAddClick = () => {
@@ -71,8 +72,8 @@ const AddInfo = () => {
             <tr>
               <td><input type="text" name="name" value={newPerson.name} onChange={handleChange} /></td>
               <td><input type="date" name="dob" value={newPerson.dob} onChange={handleChange} /></td>
-              <td><input type="text" name="aadhar" value={newPerson.aadhar} onChange={handleChange} /></td>
-              <td><input type="text" name="mobile" value={newPerson.mobile} onChange={handleChange} /></td>
+              <td><input type="number" name="aadhar" value={newPerson.aadhar} onChange={handleChange} /></td>
+              <td><input type="number" name="mobile" value={newPerson.mobile} onChange={handleChange} /></td>
               <td><input type="number" name="age" value={newPerson.age} onChange={handleChange} /></td>
               <td><button onClick={handleSaveClick}>Save</button></td>
             </tr>
